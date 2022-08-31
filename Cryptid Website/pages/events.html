@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cryptid Corner - Mysterious Events</title>
+		<link rel="stylesheet" href="../styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--Script for the topnav. As described in topNav.js, this function stores the links of the topnav in a hamburger menu and displays them when it is clicked-->
+		<script src="../scripts/topnav.js"></script>
+		<!--Script that replaces the current information with the information about the cryptid or event link clicked on by a user-->
+		<script src="../scripts/openInfo.js"></script>
+		<!--Have info of first Cryptid open by default-->
+		<!--Not sure if I could include this in openInfo.js-->
+		<script>
+			document.addEventListener("DOMContentLoaded", function(event){
+				document.getElementById("defaultOpen").click();
+			});
+		</script>
+	</head>
+	<body>
+
+		<div id="header">
+			<!--Site logo/banner -->
+			<img src="../images/logo.png" alt="Cryptid Corner">
+			<!--Responsive TopNav-->
+			<div class="topnav" id="topnav">
+			<a href="home.html" class="active" title="Home Page" tabindex="1">Home</a>
+			<a href="cryptids.html" class="active" title="Cryptids Page" tabindex="2">Cryptids</a>
+			<a href="events.html" class="active" title="Mysterious Events Page" tabindex="3">Mysterious Events</a>
+		
+			<a href="javascript:void(0);" class="icon" onclick="topnav()" tabindex="4">
+   		 	<i class="fa fa-bars"></i>
+  			</a>
+			</div>
+		</div>
+		<!--Site content-->
+		<div class="content-container">
+			<!--Links to each cryptid. When the buttons are clicked information on the cryptid will replace the current information on screen same deal for Events page-->
+			<div class="tab">
+				<button id="defaultOpen" class="infolinks" onclick="openInfo(event, 'Roswell')" tabindex="5">Roswell Incident</button>
+				<button class="infolinks" onclick="openInfo(event, 'BattleofLA')" tabindex="6">Battle of Los Angles</button>
+				<button class="infolinks" onclick="openInfo(event, 'JohnTitor')" tabindex="7">John Titor</button>
+				<button class="infolinks" onclick="openInfo(event, 'Taured')" tabindex="8">Man from Taured</button>
+			</div>
+
+			<!--Sources will be provided in comments when used-->
+			<!--Information on each evemt-->
+			<div id="Roswell" class="content">
+				<h2>Roswell Incident</h2>
+				<!-- Source: https://en.wikipedia.org/wiki/Roswell_incident -->
+				<p>
+					<b>Date</b>: 1947 <br>
+					<b>Location</b>: Near Roswell, New Mexico <br>
+					<b>Description</b>: Perhaps the most well-known incident surrounding UFOs (learn more about UFOs in the Cryptids section). This event takes place in 1947 when a mysterious metallic colored object crashed near a ranch just outside of Roswell, New Mexico. First the military held a briefing saying it was a flying disc, then they retracted that statement and said it was a weather balloon. In the 1970s, a former Lieutenant Colonel stated that the weather balloon story was merely a cover-up. This was followed up by conspiracy theories of aliens and UFOs that still exist to this day. In the 1990s, the Air Force reported that the crash was that of a nuclear test surveillance balloon. This remains the official story to this day, but the question remains as to whether this is another cover-up story, much like the weather balloon was.
+				</p>
+			</div>
+			<!--Battle of Los Angeles-->
+			<div id="BattleofLA" class="content">
+				<h2>Battle of Los Angeles</h2>
+				<!-- Source: https://en.wikipedia.org/wiki/Battle_of_Los_Angeles -->
+				<p>
+					<b>Date</b>: February 24-25, 1942 <br>
+					<b>Location</b>: Los Angeles, California <br>
+					<b>Description</b>: The "Battle of Los Angeles" started late at night on February 24, 1942, just several months after the attack on Pearl Harbor. Alarms were raised by the military after an unidentified object was spotted over Los Angeles over the fear of an attack by Japan. Los Angeles was ordered into a blackout, and search lights shone into the sky. Machine guns and anti-aircraft guns fired into the sky at the target. After several hours of shooting at what was thought to be multiple targets, the shooting came to an end. It was labeled as a false alarm after it was found that the mysterious object was supposedly a weather balloon. Was the object they were shooting at in the sky truly a weather balloon or could it have been a UFO with aliens inside. While the latter seems unlikely, speculation still remains. Unfortunately, 5 people died during this incident.
+				</p>
+			</div>
+			<!--John Titor-->
+			<div id="JohnTitor" class="content">
+				<!-- Source: https://en.wikipedia.org/wiki/John_Titor -->
+				<h2>John Titor</h2>
+				<p>
+					<b>Date</b>: 2000-2001 <br>
+					<b>Location</b>: Internet <br>
+					<b>Description</b>: On several internet message boards in 2000, a man started to post about how he was a time traveler from the year 2036. Titor's explained several events that would happen in the coming years, however these "predictions" ended up being vague and inaccurate given what has happened since. Titor's first posts were on the Time Travel Institute's online forums and described the 6 parts needed to build a functioning time machine. Titor claimed to be a US soldier from 2036, who was sent to the year 1975 to retrieve an IBM 5100 to debug computer programs. Titor claimed to be the grandson of one of the creators of the IBM 5100, which is why he was selected for the mission. Titor warned of an impending civil war in the United States, which would result in the country being split into five regions. While Titor's predictions never came true, and it was deemed his real identity was a lawyer named Larry and his brother Morey, it still begs the question: was he telling the truth? Its entirely possible John Titor was a real person from a different future, and him travelling back in time changed the course of history. While the more likely explanation is that Larry and Morey Haber were internet trolls, it is still something to think about. <br><br>
+					The case of John Titor was mostly included on this site because a reference to him is made in one of my favorite shows, <a href="https://en.wikipedia.org/wiki/Steins;Gate_(TV_series)" title="Steins;Gate TV Series (Wikipedia)" target="_blank" tabindex="9">Steins;Gate</a>. The show explores time travel and was a very interesting and enjoyable watch.
+
+				</p>
+			</div>
+			<!--Man from Taured-->
+			<div id="Taured" class="content">
+				<h2>Man from Taured</h2>
+				<!-- Source: https://english.newsnationtv.com/offbeat/news/taured-mystery-the-man-who-vanished-253965.html -->
+				<p>
+					<b>Date</b>: July, 1954 <br>
+					<b>Location</b>: Tokyo, Japan <br>
+					<b>Description</b>: In 1954, a mysterious man arrived at Haneda Airport in Japan. As he makes his way through customs, officers question him as to where he is a citizen is. The man stated he was from Taured. When asked to point to it on a map after the officers could not locate it, he pointed to Andorra. The mysterious man insisted that Taured had existed for over 1000 years. His passport seemed authentic despite the unknown country he claimed to be from seemingly not existing. The man appeared to speak several languages and carried with him several different currencies. He was placed under tight security, but the next morning he vanished. <a href="https://www.snopes.com/fact-check/man-from-taured-parallel-universe/" title="Snopes" target="_blank" tabindex="10">Snopes</a>, a well-known fact checking website, labels this event as mostly false. According to Snopes, a man did appear at Haneda Airport with a passport from a non-existent country, however he never vanished but was instead charged. The question still remains, was this a fake passport made by the man, or was he genuinely from the country of Taured?
+				</p>
+			</div>
+		
+
+		</div>
+		<!--BottomNav bar, or just a footer, only has a contact us option at the moment-->
+		<footer class="bottomnav">
+			<a href="mailto:ahayes3@albany.edu" tabindex="11">Contact Us</a>
+		</footer>
+	</body>
+</html>

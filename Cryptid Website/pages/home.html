@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cryptid Corner - Home</title>
+		<link rel="stylesheet" href="../styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--Script for the topnav. As described in topNav.js, this function stores the links of the topnav in a hamburger menu and displays them when it is clicked-->
+		<script src="../scripts/topnav.js"></script>
+	
+	</head>
+	<body>
+		<div id="header">
+			<img src="../images/logo.png" alt="Cryptid Corner">
+			<!-- Website header made by one of my friends -->
+
+			<!--Responsive TopNav-->
+			<div class="topnav" id="topnav">
+			<a href="home.html" class="active" title="Home Page" tabindex="1">Home</a>
+			<a href="cryptids.html" class="active" title="Cryptids Page" tabindex="2">Cryptids</a>
+			<a href="events.html" class="active" title="Mysterious Events Page" tabindex="3">Mysterious Events</a>
+		
+			<a href="javascript:void(0);" class="icon" onclick="topnav()" tabindex="4">
+   		 	<i class="fa fa-bars"></i>
+  			</a>
+			</div>
+		</div>
+		
+		<!--Responsive Flexbox to hold information on website-->
+		<div class="flex-container">
+			<!--About Me section so readers can learn about the site creator, also includes a link to my resume site-->
+			<div class="flex-left">
+				<h1>About Me</h1>
+				<p>
+				Hello, my name is Aidan. I am currently studying at the University at Albany, SUNY and majoring in Computer Science. You can find the link to my resume <a href="https://www.albany.edu/~ah564489/Assignment4/work.html" title="My Resume" target="_blank" tabindex="5">here</a>. Cryptids and the supernatural have been interesting to me for a long time, so I decided to make my final project dedicated to them. I hope you find any information you find on this site useful!	
+				</p>
+			</div>
+			<!--Brief paragraph that explains what the site is all about-->
+			<div class="flex-right">	
+				<h1>Welcome to Cryptid Corner!</h1>
+				<p> 
+				This website is dedicated to all things cryptids and the supernatural. Cryptids can be defined as the mysterious creatures of folktales and legends, such as Bigfoot or the Loch Ness Monster. This website is not here to either prove or disprove the existence of these creatures, but to simply provide information on them. While cryptids are found all around the world, this site will mostly focus on North American cryptids for now (with a few exceptions). Please feel free to use the "Contact Us" option below to suggest additions to the site. Below is a map which depicts different cryptids from each of the 50 US states.
+				</p>
+				<!-- https://www.cashnetusa.com/blog/most-famous-mythical-creature-of-every-us-state-illustrated/ -->
+				<img src="../images/cryptidmap.jpg" alt="Map of cryptids in the United States">
+			</div>
+		</div>
+		<footer class="bottomnav">
+			<a href="mailto:ahayes3@albany.edu" tabindex="6">Contact Us</a>
+		</footer>
+	</body>
+</html>

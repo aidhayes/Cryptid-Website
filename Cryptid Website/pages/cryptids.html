@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cryptid Corner - Cryptids</title>
+		<link rel="stylesheet" href="../styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--Script for the topnav. As described in topNav.js, this function stores the links of the topnav in a hamburger menu and displays them when it is clicked-->
+		<script src="../scripts/topnav.js"></script>
+		<!--Script that replaces the current information with the information about the cryptid or event link clicked on by a user-->
+		<script src="../scripts/openInfo.js"></script>
+		<!--Have info of first Cryptid open by default, not sure if this can be included in openInfo.js-->
+		<script>
+			document.addEventListener("DOMContentLoaded", function(event){
+				document.getElementById("defaultOpen").click();
+			});
+		</script>
+
+	</head>
+	<body>
+		<div id="header">
+			<img src="../images/logo.png" alt="Cryptid Corner">
+
+			<!--Responsive TopNav-->
+			<div class="topnav" id="topnav">
+			<a href="home.html" class="active" title="Home Page" tabindex="1">Home</a>
+			<a href="cryptids.html" class="active" title="Cryptids Page" tabindex="2">Cryptids</a>
+			<a href="events.html" class="active" title="Mysterious Events Page" tabindex="3">Mysterious Events</a>
+		
+			<a href="javascript:void(0);" class="icon" onclick="topnav()" tabindex="4">
+   		 	<i class="fa fa-bars"></i>
+  			</a>
+			</div>
+		</div>
+		<!--Site Content-->
+		<div class="content-container">
+			<!--Links to each cryptid. When the buttons are clicked information on the cryptid will replace the current information on screen same deal for Events page-->
+			<div class="tab">
+				<button id="defaultOpen" class="infolinks" onclick="openInfo(event, 'Bigfoot')">Bigfoot</button>
+				<button class="infolinks" onclick="openInfo(event, 'LochNessMonster')" tabindex="5">Loch Ness Monster</button>
+				<button class="infolinks" onclick="openInfo(event, 'JerseyDevil')" tabindex="6">Jersey Devil</button>
+				<button class="infolinks" onclick="openInfo(event, 'Mothman')" tabindex="7">Mothman</button>
+				<button class="infolinks" onclick="openInfo(event, 'Wendigo')" tabindex="8">Wendigo</button>
+				<button class="infolinks" onclick="openInfo(event, 'Chupacabra')" tabindex="9">Chupacabra</button>
+				<button class="infolinks" onclick="openInfo(event, 'UFO')" tabindex="10">Aliens & UFOs</button>
+			</div>
+
+			<!--Sources will be provided in comments when used-->
+			<!--Information on each cryptid-->
+			<div id="Bigfoot" class="content">
+				<h2>Bigfoot</h2>
+				<!-- https://www.history.com/news/bigfoot-legend-newspaper -->
+				<img src="../images/bigfoot.jpg" alt="Bigfoot"> 
+				<p>
+					<b>Name</b>: Bigfoot, Sasquatch <br>
+					<b>Location</b>: Pacific Northwest of United States <br>
+					<!--Source: https://en.wikipedia.org/wiki/Bigfoot-->
+					<b>Description</b>: A tall, hairy, primate like creature. Bigfoot is bipedal and stands taller than an average human. Usually described as having brown hair/fur and having a distinct walking style. Bigfoot-like creatures have been reported all across the world, such as the Yeti of the Himalayas and the Skunk Ape in Florida, perhaps all of them are connected in some way. Reports of this creature have been reported for centuries, and did not just start after the infamous <a href="https://en.wikipedia.org/wiki/Patterson–Gimlin_film" title="Patterson-Gimlin Film" target="_blank" tabindex="11">Patterson-Gimlin film</a>.
+				</p>
+			</div>
+
+			<div id="LochNessMonster" class="content">
+				<h2>Loch Ness Monster</h2>
+				<!-- https://www.bbc.com/news/uk-scotland-highlands-islands-49495145 -->
+				<img src="../images/lochnessmonster.jpg" alt="Loch Ness Monster">
+				<p>
+					<b>Name</b>: The Loch Ness Monster, Nessy <br>
+					<b>Location</b>: Loch Ness, Scotland <br>
+
+					<b>Description</b>: The Loch Ness Monster is commonly depicted as being a large sea monster with a long neck. While this picture has been shown to be a fake, it is probably the most well-known photo of the Loch Ness Monster, and one many people might be familiar with. The Loch Ness Monster is just one of many sea monster cryptids, many lesser-known ones have been reported all across the world. This site will not explore the other sea monsters because they usually have the same description as the Loch Ness Monster.
+				</p>
+			</div>
+
+			<div id="JerseyDevil" class="content">
+				<h2>Jersey Devil</h2>
+				<!-- https://en.wikipedia.org/wiki/Jersey_Devil (for picture and info)-->
+				<img src="../images/jerseydevil.png" alt="The Jersey Devil">
+				<p>
+					<b>Name</b>: Jersey Devil, Leeds Devil <br>
+					<b>Location</b>: Pine Barrens, New Jersey <br>
+					<b>Description</b>: The Jersey Devil is typically described as having a goat-like face, a long neck, bat-like wings, and a pointed tail (like the devil). This cryptid is bipedal, with both its hands and feet being hooved. Witnesses have described it as fast and having a blood-curdling scream. Many agree this cryptid originated from a 1735 folktale, when Jane Leeds, who already had 12 children, cursed her soon to be 13th child as the devil. Shortly after being born, the child transformed into the Jersey Devil. While this is most definitely a myth, it does explain why there have been sightings of this cryptid. It certainly looks like something that would come from New Jersey.
+				</p>
+			</div>
+
+			<div id="Mothman" class="content">
+				<h2>Mothman</h2>
+				<!-- https://de.wikipedia.org/wiki/Mothman -->
+				<img src="../images/mothman.png" alt="Mothman">
+				<p>
+					<b>Name</b>: Mothman <br>
+					<b>Location</b>: Point Pleasent, West Virginia <br>
+					<!-- Source: https://en.wikipedia.org/wiki/Mothman (for picture and info)-->
+					<b>Description</b>: As the name suggests, Mothman is described as having the appearance of a large moth-like humanoid. Mothman is typically depicted as having gray fur and red eyes. What makes Mothman interesting more so than some of the other cryptids is that he is tied to a specific event. There were several sightings of Mothman in Point Pleasant between 1966 and 1967 until these sightings seemingly stopped following the collapse of the <a href="https://en.wikipedia.org/wiki/Silver_Bridge" title="Collapse of the Silver Bridge" target="_blank" tabindex="12">Silver Bridge</a>. Many believe Mothman is connected to this tragic event in some way, perhaps acting as a warning of some kind. Point Pleasant now holds an annual Mothman Festival and has erected a statue of this legendary cryptid.
+
+				</p>
+			</div>
+			<div id="Wendigo" class="content">
+				<h2>Wendigo</h2>
+				<!-- https://medium.com/exploring-history/wendigos-the-spirits-of-hunger-and-famine-in-the-united-states-588a62ed6f47 (image)-->
+				<img src="../images/wendigo.jpeg" alt="Wendigo">
+				<!-- Source: https://en.wikipedia.org/wiki/Wendigo -->
+				<p>
+					<b>Name</b>: Wendigo(s) <br>
+					<b>Location</b>: North America, specifically Canada and the United States <br>
+					<b>Description</b>: Physical descriptions of the Wendigo vary, although it is often depicted similarly to the provided image. The origin of this cryptid actually comes from the First Nations (Native Americans) of Canada and the United States. More specifically, this cryptid was part of the beliefs of Algonquin-speaking peoples, which include the Ojibwe, the Saulteaux, and other tribes. While these peoples had different physical descriptions of the Wendigo, other characteristics were common amongst all of them. The most common was that the Wendigo was cannibalistic with a strong association with winter and famine. While the existence of the Wendigo is questionable, it is still interesting many native peoples from various regions had a similar belief of this cryptid.
+				</p>
+			</div>
+
+			<div id="Chupacabra" class="content">
+				<h2>Chupacabra</h2>
+				<!-- https://en.wikipedia.org/wiki/Chupacabra (image and information -->
+				<img src="../images/chupacabra.jpg" alt="Chupacabra">
+				<p>
+					<b>Name</b>: Chupacabra, El Chupacabra <br>
+					<b>Location</b>: Mexico, Puerto Rico, United States <br>
+					<b>Description</b>: The English translation of this name from Spanish literally means "goat-sucker". The Chupacabra is described differently amongst witnesses, common characteristics include being around the size of a small bear with spines running done it's back. The Chupacabra has also been described as being dog-like, lizard-like, and even alien-like. The origin of this cryptid comes from Puerto Rico in 1995, when several sheep were found dead with three puncture wounds. It is said all of them were completely drained of their blood. 
+				</p>
+			</div>
+
+			<div id="UFO" class="content">
+				<h2>Aliens & UFOs</h2>
+				<img src=../images/ufo.jpg alt="Unidentified Flying Object">
+				<p>
+					<b>Name</b>: Unidentified Flying Objects (UFOs), Flying Saucer, Aliens, Extra-Terrestrials, Martians, etc. <br>
+					<b>Location</b>: Various <br>
+					<b>Description</b>: UFOs are usually described as "Flying Saucers" as the most common description is some sort of round metal object flying in the sky. Many believe aliens are piloting these UFOs and are visiting Earth to either observe or perhaps abduct people. There are many reported cases of alien abductions among people, whether believable or not, this phenomenon still exists. Some people aliens have been visiting us from far out in the galaxy, or even that they are living among us at this very moment. Recently the Pentagon released footage captured by Navy pilots that shows some sort of UFO. As the name UFO suggests, what the pilots saw is unknown even to the Pentagon (Source: <a href="https://www.nbcnews.com/think/opinion/u-s-military-takes-ufos-seriously-why-doesn-t-silicon-ncna1264107" title="The U.S. military takes UFOs seriously. Why doesn't Silicon Valley or academia?" target="_blank" tabindex="13">NBC</a>). The image shown is a still from the footage captured by these pilots. Aliens themselves are usually depicted as being smaller than humans, and very slender with large round heads and big black eyes, with either green or grey skin.
+				</p>
+			</div>
+
+		</div>
+		<footer class="bottomnav">
+			<a href="mailto:ahayes3@albany.edu" tabindex="14">Contact Us</a>
+		</footer>
+	</body>
+</html>
